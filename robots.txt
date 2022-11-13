@@ -1,1 +1,1 @@
-Sitemap: https://github.com/elizwagner/biostat840-intro-LIz-Wagner/sitemap.xml
+Sitemap: https://elizwagner.github.io/biostat840-intro-LIz-Wagner/sitemap.xml
