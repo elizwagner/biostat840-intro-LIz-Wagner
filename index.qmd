@@ -13,4 +13,4 @@ about:
       href: mailto:e.doyle.w@gmail.com
 ---
 
-My name is Liz. I'm studying biostatistics as a Master's of Science student at the Johns Hopkins Bloomberg School of Public Health. My interests include cancer biology and evaluating how public policy effects those with few resources.
+My name is Liz. I'm studying biostatistics as a Master's of Science student at the Johns Hopkins Bloomberg School of Public Health. My interests include cancer biology and evaluating how public policy affects those with few resources.
