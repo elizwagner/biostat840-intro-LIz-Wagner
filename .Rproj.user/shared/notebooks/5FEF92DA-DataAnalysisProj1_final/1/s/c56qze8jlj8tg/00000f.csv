@@ -1,0 +1,6 @@
+"0","library(wordcloud)"
+"2","Loading required package: RColorBrewer
+"
+"0","b_lyrics_df2n %>% "
+"0","  slice(1:25) %>% "
+"0","  with(wordcloud(word, n))"

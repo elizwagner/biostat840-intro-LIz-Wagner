@@ -1,0 +1,6 @@
+"0",""
+"0","sales1 %>% "
+"0","  filter(artist==""Beyoncé"")%>%"
+"0","  summarize(median = median(years_since_release),"
+"0","            recent = min(years_since_release), "
+"0","            oldest = max(years_since_release))"

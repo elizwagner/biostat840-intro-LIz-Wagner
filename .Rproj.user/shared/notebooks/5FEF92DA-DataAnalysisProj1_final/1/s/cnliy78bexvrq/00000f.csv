@@ -1,0 +1,8 @@
+"0",""
+"0","b_lyrics_df2n %>% "
+"0","  slice(1:25) %>% "
+"0","  ggplot(aes(fill = sentiment, y = fct_reorder(word,"
+"0","                         n), x= n))+"
+"0","  geom_bar(position=""dodge"", stat=""identity"")+"
+"0","  labs(x=""Frequency of Word"", y= ""Sentiment Word"", title=""Sentiment Word Frequency"")+ "
+"0","  scale_fill_discrete(name = ""Sentiment"")"

@@ -1,0 +1,7 @@
+"0","#Calculate the total album sales for each artist and for each `country` (only sales from the UK, US, and World)."
+"0","sales2 <- sales %>% "
+"0","  filter(country == ""UK""|country == ""US""| country == ""World"")%>%"
+"0","  group_by(artist, country) %>%"
+"0","  summarize(total = sum(sales))"
+"2","`summarise()` has grouped output by 'artist'. You can override using the `.groups` argument."
+"0","sales2"

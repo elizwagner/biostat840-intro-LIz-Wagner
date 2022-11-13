@@ -1,0 +1,4 @@
+"0","library(wordcloud)"
+"0","ts_lyrics_df2 %>% "
+"0","  slice(1:25) %>% "
+"0","  with(wordcloud(word, n))"

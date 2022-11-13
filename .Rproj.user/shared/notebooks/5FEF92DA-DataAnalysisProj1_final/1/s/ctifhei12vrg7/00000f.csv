@@ -1,0 +1,2 @@
+"0","#Transform the `sales` into a unit that is album sales in millions of dollars."
+"0","sales$sales <-  as.numeric(sales$sales)/1000000"

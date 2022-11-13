@@ -1,0 +1,8 @@
+"0","#Using the total album sales, create a [percent stacked barchart](https://r-graph-gallery.com/48-grouped-barplot-with-ggplot2) using `ggplot2` of the percentage of sales of studio albums (in millions) along the y-axis for the two artists along the x-axis colored by the `country`."
+"0","ggplot(sales2,aes(fill=artist, y=total, x=country)) + "
+"0","    geom_bar(position=""fill"", stat=""identity"") +"
+"0","    ggtitle(label = ""ALbum Sales"","
+"0","              subtitle = ""As a Percentage by Artist Seperated by Country"") +"
+"0","    xlab(""Country"") + "
+"0","  ylab(""Precentage of Sales"")+ "
+"0","  scale_fill_discrete(name = ""Artist"")"

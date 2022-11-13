@@ -1,0 +1,7 @@
+"0","ts_lyrics_df = separate_rows(ts_lyrics, Lyrics, sep = '\n') %>%"
+"0","rename(line = Lyrics) %>%"
+"0","    mutate(song_line = row_number()) %>%"
+"0","    mutate(hello_ind = ifelse(grepl(pattern = ""hello"", x = line, ignore.case = TRUE),1,0)) %>%"
+"0","    filter(hello_ind == 1) "
+"0","    "
+"0","ts_lyrics_df"

@@ -1,0 +1,5 @@
+"0","#Keep only album sales from the UK, the US or the World."
+"0","#Auto print your final wrangled tibble data frame."
+"0","salesdf <- sales %>% "
+"0","   filter(country == ""UK""|country == ""US""| country == ""World"")"
+"0","salesdf"

@@ -1,0 +1,6 @@
+"0","#Calculate the most recent, oldest, and the median years since albums were released for both Beyoncé and Taylor Swift."
+"0","sales1 %>% "
+"0","  filter(artist==""Taylor Swift"")%>%"
+"0","  summarize(median = median(years_since_release),"
+"0","            recent = min(years_since_release), "
+"0","            oldest = max(years_since_release))"

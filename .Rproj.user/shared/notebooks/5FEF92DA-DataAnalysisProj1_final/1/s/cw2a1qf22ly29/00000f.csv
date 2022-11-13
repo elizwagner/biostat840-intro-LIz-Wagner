@@ -1,0 +1,40 @@
+"0",""
+"0","# Use `lubridate` to create a column called `released` that is a `Date` class. However, to be able to do this, you first need to use `stringr` to search for pattern that matches things like this ""(US)\[51\]"" in a string like this ""September 1, 2006 (US)\[51\]"" and removes them. (**Note**: to get full credit, you must create the regular expression)."
+"0",""
+"0","# Use `forcats` to create a factor called `country` (**Note**: you may need to collapse some factor levels)."
+"0",""
+"0","sales <- readRDS(here(""data"",""sales.RDS""))"
+"0","library(tidyverse)"
+"2","Registered S3 methods overwritten by 'dbplyr':
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+"
+"2","── [1mAttaching packages[22m ─── tidyverse 1.3.2 ──"
+"2","[32m✔[39m [34mggplot2[39m 3.3.6     [32m✔[39m [34mpurrr  [39m 0.3.4
+[32m✔[39m [34mtibble [39m 3.1.8     [32m✔[39m [34mdplyr  [39m 1.0.9
+[32m✔[39m [34mtidyr  [39m 1.2.1     [32m✔[39m [34mstringr[39m 1.4.1
+[32m✔[39m [34mreadr  [39m 2.1.2     [32m✔[39m [34mforcats[39m 0.5.2"
+"2","── [1mConflicts[22m ────── tidyverse_conflicts() ──
+[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
+[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()"
+"0","library(stringr)"
+"0","library(lubridate)"
+"2","
+Attaching package: ‘lubridate’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+"
+"0","sales$released <- str_remove_all(string=sales$released, pattern = ""(US)|(UK)|[\\[\\]\\(\\)]|(39)|(51)"")"
+"0",""
+"0","sales <- sales %>% "
+"0","  mutate(released=mdy(released)) %>% "
+"0","  mutate(country = as.factor(country)) %>%"
+"0","  mutate(country = fct_collapse(country,"
+"0","  World = c(""WW"", ""World""),"
+"0","  FR = c(""FR"", ""FRA"")"
+"0","))"

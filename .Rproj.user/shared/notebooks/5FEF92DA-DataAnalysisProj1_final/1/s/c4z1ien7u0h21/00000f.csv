@@ -1,0 +1,8 @@
+"0","#Using the wrangled data from Part 1A, use `ggplot2` to create a scatter plot of sales of studio albums (in millions) along the y-axis by the released date for each album along the x-axis."
+"0",""
+"0","sales %>%"
+"0","  filter(country == ""UK""|country == ""US""| country == ""World"")%>%"
+"0","ggplot(aes(x=released, y=sales, color=artist)) +"
+"0","  geom_point() + "
+"0","  facet_grid(country ~ .)+"
+"0","  labs(x=""Year of Release"", y= ""Sales in Millions"", title=""Sales in Millions by Year of Release"", subtitle = ""Faceted by Country"", color = ""Artist"")"

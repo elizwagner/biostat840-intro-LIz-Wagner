@@ -1,0 +1,6 @@
+"0",""
+"0","ts_lyrics_df2 <- ts_lyrics_df2 %>%"
+"0","inner_join(get_sentiments(""bing""))%>%                                 "
+"0","  slice(1:25)"
+"2","Joining, by = ""word"""
+"0","ts_lyrics_df2"

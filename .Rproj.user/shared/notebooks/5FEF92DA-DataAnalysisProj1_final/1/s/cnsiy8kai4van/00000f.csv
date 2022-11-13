@@ -1,0 +1,8 @@
+"0","#Using `ts_lyrics`, create a new column called `line` with one line containing the character string for each line of Taylor Swift's songs."
+"0",""
+"0","b_lyrics <- readRDS(here(""data"",""b_lyrics.RDS""))"
+"0","ts_lyrics <- readRDS(here(""data"",""ts_lyrics.RDS""))"
+"0","library(tidyverse)"
+"0","library(stringr)"
+"0","library(tidytext) "
+"0","ts_lyrics"

@@ -1,0 +1,7 @@
+"0","ts_lyrics_df1 = separate_rows(ts_lyrics, Lyrics, sep = '\n') %>%"
+"0","rename(line = Lyrics) %>%"
+"0","    mutate(song_line = row_number()) %>%"
+"0","    mutate(goodbye_ind = ifelse(grepl(pattern = ""goodbye"", x = line, ignore.case = TRUE),1,0)) %>%"
+"0","    filter(goodbye_ind == 1) "
+"0","    "
+"0","ts_lyrics_df1"

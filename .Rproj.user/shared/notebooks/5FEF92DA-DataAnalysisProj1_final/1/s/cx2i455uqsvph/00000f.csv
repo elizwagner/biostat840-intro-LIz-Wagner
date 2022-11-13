@@ -1,0 +1,3 @@
+"0","b_lyrics <- readRDS(here(""data"",""b_lyrics.RDS""))"
+"0","ts_lyrics <- readRDS(here(""data"",""ts_lyrics.RDS""))"
+"0","sales <- readRDS(here(""data"",""sales.RDS""))"

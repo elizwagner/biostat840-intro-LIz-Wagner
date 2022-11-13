@@ -1,0 +1,5 @@
+"0","b_lyrics_df = b_lyrics %>%"
+"0","    mutate(hello_ind = ifelse(grepl(pattern = ""hello"", x = line, ignore.case = TRUE),1,0)) %>%"
+"0","    filter(hello_ind == 1) "
+"0","    "
+"0","b_lyrics_df"

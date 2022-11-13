@@ -1,0 +1,3 @@
+"0","#Using the wrangled data from Part 1A, use `ggplot2` to create a bar plot for the sales of studio albums (in millions) along the x-axis for each of the album titles along the y-axis."
+"0","sales3 <- sales %>% "
+"0","   filter(country == ""World"")"
